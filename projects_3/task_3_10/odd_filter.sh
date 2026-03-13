@@ -1,0 +1,11 @@
+#!/bin/bash
+
+for i in {1..20}; do
+	if [ $((i % 2)) -eq 0 ]; then
+		continue
+	elif ((i == 15)); then
+		break
+	else
+		echo "$i"
+	fi
+done
